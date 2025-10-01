@@ -29,7 +29,7 @@ export const Login: React.FC<LoginProps> = ({ onLogin }) => {
           <div className="inline-block p-4 bg-pr-light rounded-full mb-4">
               <Icon name="logo" className="w-10 h-10 text-pr-accent"/>
           </div>
-          <h1 className="text-4xl font-bold text-white">PurpleRain Chat</h1>
+      <h1 className="text-6xl font-handlee text-purple-700 mb-12 text-center">Welcome to RainChat</h1>
           <p className="text-pr-accent mt-2">A private connection.</p>
         </div>
 
@@ -52,7 +52,7 @@ export const Login: React.FC<LoginProps> = ({ onLogin }) => {
           
           <button
             type="submit"
-            className="w-full p-4 bg-pr-purple text-white font-semibold rounded-lg shadow-lg transition-all transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-pr-accent focus:ring-opacity-75 disabled:opacity-50"
+            className="w-full p-4 bg-amber-500 text-black font-semibold rounded-lg shadow-lg transition-all transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-pr-accent focus:ring-opacity-75 disabled:opacity-50"
             disabled={!username.trim()}
           >
             Join Chat
