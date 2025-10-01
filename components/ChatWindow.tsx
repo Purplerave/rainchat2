@@ -75,7 +75,7 @@ export const ChatWindow: React.FC<ChatWindowProps> = ({ user, messages, sendMess
               type="text"
               value={newMessage}
               onChange={(e) => setNewMessage(e.target.value)}
-              placeholder="Type your message..."
+              placeholder="Chat."
               disabled={connectionStatus !== 'Open'}
               className="flex-1 p-3 bg-pr-mid rounded-lg text-pr-text placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-pr-purple transition duration-300 disabled:opacity-50"
             />

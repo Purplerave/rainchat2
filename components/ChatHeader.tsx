@@ -20,11 +20,7 @@ export const ChatHeader: React.FC<ChatHeaderProps> = ({ user, connectionStatus }
   const { color, text } = statusIndicator[connectionStatus];
   
   return (
-    <header className="bg-pr-mid p-4 flex justify-between items-center shadow-lg sticky top-0 z-10">
-      <div className="flex items-center gap-3">
-        <Icon name="logo" className="w-8 h-8 text-pr-purple"/>
-        <h1 className="text-2xl font-bold text-white">PurpleRain Chat</h1>
-      </div>
+    <header className="bg-pr-mid p-4 flex justify-end items-center shadow-lg sticky top-0 z-10">
       <div className="flex items-center gap-4 text-right">
         <div className="flex flex-col items-end">
             <div className="flex items-center gap-2">
