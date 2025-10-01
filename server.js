@@ -1,9 +1,9 @@
 import { WebSocketServer, WebSocket } from 'ws';
 import https from 'https';
 
-// TODO: Move these to environment variables
-const TELEGRAM_BOT_TOKEN = '7671177991:AAGYU1v73DczBj43sWXrH3_B7GVNUwqxQ4E';
-const TELEGRAM_CHAT_ID = '475270820';
+// Read from environment variables, with a fallback for local development
+const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '7671177991:AAGYU1v73DczBj43sWXrH3_B7GVNUwqxQ4E';
+const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID || '475270820';
 
 const wss = new WebSocketServer({ port: 8082 });
 
