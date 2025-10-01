@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Handlee', cursive;
+}
+
 .force-handlee {
   font-family: 'Handlee', cursive !important;
 }
