@@ -20,15 +20,22 @@ export const Message: React.FC<MessageProps> = ({ message, isOwnMessage }) => {
     ? 'flex justify-end items-end'
     : 'flex justify-start items-end';
   
-  const bubbleClasses = isOwnMessage
-    ? 'bg-pr-purple text-white rounded-t-2xl rounded-bl-2xl'
-    : 'bg-pr-mid text-pr-text rounded-t-2xl rounded-br-2xl';
+  const bubbleColorClass = userId === UserID.Purple
+    ? 'bg-purple-600 text-white'   // Purple for Purple
+    : 'bg-amber-400 text-black'; // Gold (Amber) for Rain
+
+  const bubbleShapeClass = isOwnMessage
+    ? 'rounded-t-2xl rounded-bl-2xl'
+    : 'rounded-t-2xl rounded-br-2xl';
+
+  const bubbleClasses = `${bubbleColorClass} ${bubbleShapeClass}`;
+
 
   return (
     <div className={`px-4 py-2 ${containerClasses}`}>
        <div className="flex flex-col max-w-xs md:max-w-md">
         <div className="flex items-center gap-2" style={{ flexDirection: isOwnMessage ? 'row-reverse' : 'row' }}>
-            <p className={`text-xs font-semibold ${isPurple ? 'text-purple-400' : 'text-blue-400'}`}>
+            <p className={`text-xs font-semibold ${isPurple ? 'text-purple-400' : 'text-amber-500'}`}>
                 {userId}
             </p>
             <p className="text-xs text-gray-500">{formatTimestamp(timestamp)}</p>
