@@ -17,6 +17,15 @@ export const ChatWindow: React.FC<ChatWindowProps> = ({ user, messages, sendMess
   const [newMessage, setNewMessage] = useState('');
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
+  const statusIndicator = {
+    Connecting: { color: 'bg-yellow-500', text: 'Connecting...' },
+    Open: { color: 'bg-green-500', text: 'Connected' },
+    Closed: { color: 'bg-red-500', text: 'Disconnected' },
+    Error: { color: 'bg-red-700', text: 'Connection Error' },
+  };
+
+  const { color, text } = statusIndicator[connectionStatus];
+
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
