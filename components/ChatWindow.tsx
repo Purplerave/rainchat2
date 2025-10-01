@@ -44,7 +44,7 @@ export const ChatWindow: React.FC<ChatWindowProps> = ({ user, messages, sendMess
       {/* Main Chat Area */}
       <div className="flex flex-col">
         {/* Top bar for mobile (if sidebar is hidden) */}
-        <div className="md:hidden bg-pr-dark/50 py-2 px-4 shadow-lg">
+        <div className="md:hidden hidden bg-pr-dark/50 py-2 px-4 shadow-lg">
           <ChatHeader user={user} connectionStatus={connectionStatus} />
         </div>
 
