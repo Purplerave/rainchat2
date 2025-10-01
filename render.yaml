@@ -14,9 +14,9 @@ services:
         sync: false
 
   # Frontend (Sitio Estático de React)
-  - type: static
+  - type: static_site
     name: frontend
-    env: static
+    env: node
     plan: free
     buildCommand: "npm run build"
     staticPublishPath: "dist"
