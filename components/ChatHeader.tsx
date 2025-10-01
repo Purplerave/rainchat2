@@ -25,12 +25,12 @@ export const ChatHeader: React.FC<ChatHeaderProps> = ({ user, connectionStatus }
         <h1 className="text-2xl font-bold text-white">PurpleRain Chat</h1>
       </div>
       <div className="flex items-center gap-4 text-right">
-        <div>
-            <p className="font-semibold text-white">Logged in as: <span className={user === UserID.Purple ? 'text-purple-400' : 'text-blue-400'}>{user}</span></p>
-            <div className="flex items-center justify-end gap-2">
-                <div className={`w-3 h-3 rounded-full ${color} animate-pulse`}></div>
-                <p className="text-sm text-gray-400">{text}</p>
+        <div className="flex flex-col items-end">
+            <div className="flex items-center gap-2">
+                <div className={`w-3 h-3 rounded-full ${color}`}></div>
+                <p className="font-semibold text-white">{user}</p>
             </div>
+            <p className="text-sm text-gray-400">{text}</p>
         </div>
       </div>
     </header>
