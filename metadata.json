@@ -1,0 +1,5 @@
+{
+  "name": "PurpleRain Chat",
+  "description": "A private, real-time web chat application for two users, featuring message persistence and offline notifications.",
+  "requestFramePermissions": []
+}
