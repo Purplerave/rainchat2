@@ -9,6 +9,7 @@ interface ChatHeaderProps {
 }
 
 export const ChatHeader: React.FC<ChatHeaderProps> = ({ user, connectionStatus }) => {
+  // Forced update to ensure latest version is deployed
   const statusIndicator = {
     Connecting: { color: 'bg-yellow-500', text: 'Connecting...' },
     Open: { color: 'bg-green-500', text: 'Connected' },
