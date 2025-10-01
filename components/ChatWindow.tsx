@@ -34,7 +34,7 @@ export const ChatWindow: React.FC<ChatWindowProps> = ({ user, messages, sendMess
   };
 
   return (
-    <div className="h-screen flex flex-col bg-[url('/PurpleRain.png')] bg-contain bg-center bg-fixed text-pr-text">
+    <div className="h-screen flex flex-col bg-[url('/PurpleRain.png')] bg-contain bg-top bg-no-repeat bg-fixed text-pr-text">
       <ChatHeader user={user} connectionStatus={connectionStatus} />
 
       <main className="flex-1 overflow-y-auto p-4 scrollbar-thin">
