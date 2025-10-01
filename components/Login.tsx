@@ -29,7 +29,7 @@ export const Login: React.FC<LoginProps> = ({ onLogin }) => {
           <div className="inline-block p-4 bg-pr-light rounded-full mb-4">
               <Icon name="logo" className="w-10 h-10 text-pr-accent"/>
           </div>
-      <h1 className="text-6xl font-force-handlee mb-12 text-center">
+      <h1 className="text-6xl mb-12 text-center">
         <span className="text-purple-700">Purple</span>
         <span className="text-amber-500">Rain</span>
         <span className="text-gray-800"> Chat</span>

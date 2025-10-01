@@ -5,11 +5,10 @@ export default {
     "./**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        handlee: ['Handlee', 'cursive'],
-      },
+    fontFamily: {
+      sans: ['Handlee', 'cursive'],
     },
+    extend: {},
   },
   plugins: [],
 }
